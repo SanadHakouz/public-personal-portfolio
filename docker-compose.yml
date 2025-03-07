@@ -1,0 +1,16 @@
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hakousan-portfolio
+    container_name: hakousan-portfolio
+    ports:
+      - "8000:80"
+    volumes:
+      # Mount the entire project directory
+      - .:/var/www/html
+    environment:
+      - APP_ENV=local
+      - APP_DEBUG=true

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250" preserveAspectRatio="xMidYMid meet">
+  <!-- Light blue background rectangle -->
+  <rect x="0" y="0" width="300" height="250" fill="#EBF2FF" />
+  
+  <!-- Browser Window -->
+  <rect x="50" y="30" width="200" height="160" rx="5" fill="#FFFFFF" stroke="#2563EB" stroke-width="3" />
+  
+  <!-- Browser Header -->
+  <rect x="50" y="30" width="200" height="30" rx="5" fill="#2563EB" />
+  
+  <!-- Browser Controls -->
+  <circle cx="70" cy="45" r="5" fill="#FF5F56" />
+  <circle cx="90" cy="45" r="5" fill="#FFBD2E" />
+  <circle cx="110" cy="45" r="5" fill="#27C93F" />
+  
+  <!-- Code Symbol -->
+  <text x="150" y="125" font-family="monospace" font-size="45" text-anchor="middle" fill="#2563EB">&lt;/&gt;</text>
+  
+  <!-- Code Lines -->
+  <rect x="80" y="85" width="140" height="6" rx="3" fill="#2563EB" opacity="0.4" />
+  <rect x="80" y="105" width="100" height="6" rx="3" fill="#2563EB" opacity="0.4" />
+  <rect x="80" y="145" width="140" height="6" rx="3" fill="#2563EB" opacity="0.4" />
+  <rect x="80" y="165" width="80" height="6" rx="3" fill="#2563EB" opacity="0.4" />
+  
+  <!-- Service Name -->
+  <text x="150" y="220" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2563EB">Web Development</text>
+</svg>

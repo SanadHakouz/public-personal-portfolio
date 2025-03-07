@@ -1,0 +1,194 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Updated Navbar Styles */
+.navbar-light {
+    background-color: #2563eb !important; /* Match the blue from service icons */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white !important; /* White text for better contrast */
+    font-weight: 500; /* Slightly bolder font */
+    padding: 0.5rem 1rem; /* More spacing between links */
+    transition: all 0.2s ease; /* Smooth hover transitions */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.85) !important; /* Slight transparency on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: white !important;
+    border-bottom: 2px solid white; /* Underline active page */
+}
+
+.navbar-nav .nav-link i {
+    font-size: 1.2rem;
+    color: white; /* White icons */
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link i:hover {
+    color: rgba(255, 255, 255, 0.85); /* Match text hover */
+    transform: scale(1.1); /* Slight grow effect on hover */
+}
+
+.navbar {
+    min-height: 60px; /* Slightly taller navbar */
+    padding: 0.5rem 1rem; /* Balanced padding */
+}
+
+.navbar-brand {
+    padding: 0; /* Remove padding */
+    margin-right: 2rem; /* Add space after logo */
+    display: flex;
+    align-items: center;
+}
+
+/* Improved mobile responsiveness */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #2563eb; /* Same blue */
+        padding: 1rem;
+        border-radius: 0 0 8px 8px; /* Rounded corners on dropdown */
+    }
+
+    .navbar-toggler {
+        border: none; /* Remove border */
+        padding: 0.25rem; /* Smaller padding */
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none; /* Remove focus outline */
+        outline: none;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* White hamburger icon */
+    }
+}
+
+.page-header {
+    background-color: #333; /* Dark background for contrast */
+    position: relative;
+    overflow: hidden;
+}
+
+.breadcrumb-item a.nav-link:hover {
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+.page-header .breadcrumb {
+    background: transparent;
+}
+
+.page-header .breadcrumb-item+.breadcrumb-item::before {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.header-image-container .header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7; /* Slightly fade the image */
+}
+
+.page-header .container {
+    position: relative;
+    z-index: 1;
+}
+
+.breadcrumb-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: #ff6
+}
+
+.project-detail-breadcrumb .breadcrumb-item a {
+    /* Styles for the links */
+    background-color: transparent !important;
+    color: #4a6cf7 !important;
+}
+
+.project-detail-breadcrumb .breadcrumb-item.active {
+    /* Styles for the active/current page */
+    background-color: transparent !important;
+    color: #6c757d !important;
+}
+
+.custom-footer {
+    background-color: #2563eb; /* Orange color */
+    color: white;
+    margin-top: auto;
+    width: 100%;
+}
+
+.custom-footer .footer-column h5 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.custom-footer .footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-footer .footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.custom-footer .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.custom-footer .footer-column ul li a:hover {
+    color: #333;
+}
+
+.custom-footer .footer-bottom {
+    background-color: rgba(0,0,0,0.1);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.custom-position {
+    position: relative;
+    top: -30px; /* Adjust the value as needed */
+}
+.custom-position2 {
+    position: relative;
+    top: -20px; /* Adjust the value as needed */
+}
+
