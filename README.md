@@ -1,3 +1,42 @@
+Installation & Setup
+Follow these steps to download and run the project:
+
+1️⃣ Clone the Repository
+sh
+Copy
+Edit
+git clone https://github.com/SanadHakouz/public-personal-portfolio.git
+cd public-personal-portfolio
+2️⃣ Clone the .env.example file
+If your project uses environment variables (like database configuration), clone the .env.example file to .env:
+
+sh
+Copy
+Edit
+cp .env.example .env
+3️⃣ Set Up the Database Configuration
+In the .env file, make sure to set up the SQLite database configuration:
+
+env
+Copy
+Edit
+DB_CONNECTION=sqlite
+DB_DATABASE=database/database.sqlite
+Make sure the database/database.sqlite file exists, or create it manually.
+
+4️⃣ Run with a Local Server , I use herd for simplicity
+
+🛠️ Customization
+To modify the portfolio:
+
+Edit the index.html file for content changes.
+Modify the style.css file for styling updates.
+Update script.js for interactive features.
+
+📄 License
+This project is open-source and free to use. Feel free to modify it as needed.
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
