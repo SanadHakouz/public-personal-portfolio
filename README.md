@@ -1,30 +1,104 @@
-Installation & Setup
-Follow these steps to download and run the project:
-
-1️⃣ Clone the Repository
-sh
-Copy
-Edit
-git clone https://github.com/SanadHakouz/public-personal-portfolio.git
-cd public-personal-portfolio
-2️⃣ Clone the .env.example file
-If your project uses environment variables (like database configuration), clone the .env.example file to .env:
-
-sh
-Copy
-Edit
+7.Setup and Installation
+Prerequisites
+Before installing the portfolio application, ensure your system meets these requirements:
+●
+●
+●
+●
+●
+PHP 8.1 or higher
+Composer
+SQLite (or other database of choice)
+Node.js and NPM (for asset compilation)
+Git (for version control and installation)
+Installation Steps
+Follow these steps to set up the portfolio on your local environment:
+1. Clone the Repository
+git clone https://github.com/sanadhakouz/public-personal-portfolio.git
+cd portfolio
+2. Install PHP Dependencies
+composer install
+3. Copy Environment File
 cp .env.example .env
-3️⃣ Set Up the Database Configuration
-In the .env file, make sure to set up the SQLite database configuration:
-
-env
-Copy
-Edit
-DB_CONNECTION=sqlite
-DB_DATABASE=database/database.sqlite
-Make sure the database/database.sqlite file exists, or create it manually.
-
-4️⃣ Run with a Local Server , I use herd for simplicity
+4. Generate Application Key
+php artisan key:generate
+5. Set Up the Database
+For SQLite:
+touch database/database.sqlite
+Edit .env file to use SQLite:
+DB
+DB
+_
+CONNECTION=sqlite
+_
+DATABASE=/absolute/path/to/database/database.sqlite
+6. Run Migrations and Seeders
+php artisan migrate --seed
+7. Create Storage Link
+php artisan storage:link
+8. Install Frontend Dependencies and Compile Assets
+npm install
+npm run dev
+9. Serve the Application
+php artisan serve
+The application should now be accessible at http://localhost:8000
+Configuration
+Several aspects of the application can be configured through the .env file:
+Basic Configuration
+APP
+APP
+APP
+APP
+NAME="Your Portfolio Name"
+_
+ENV=local
+_
+DEBUG=true
+_
+_
+URL=http://localhost:8000
+File Storage Configuration
+FILESYSTEM
+_
+DISK=public
+Mail Configuration (for contact form)
+MAIL
+MAIL
+MAIL
+MAIL
+MAIL
+MAIL
+MAIL
+_
+MAILER=smtp
+_
+HOST=smtp.mailtrap.io
+PORT=2525
+_
+USERNAME=null
+_
+PASSWORD=null
+_
+ENCRYPTION=null
+_
+FROM
+_
+_
+ADDRESS="hello@example.com"
+MAIL
+FROM
+_
+_
+NAME="${APP
+_
+NAME}"
+Initial Admin User
+After running seeders, you can log in with these credentials:
+●
+●
+Email: admin@example.com
+Password: password
+For security reasons, change these credentials immediately after first login.
 
 🛠️ Customization
 To modify the portfolio:
