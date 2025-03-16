@@ -1,3 +1,4 @@
+here you can see the readme file with better structure :
 https://docs.google.com/document/d/1NGNhplM-PCSGJfbR6YL_YE8r2Vdse6dua8kaCY2VGEk/edit?usp=drive_link
 
 Step 1: Clone the Repository
